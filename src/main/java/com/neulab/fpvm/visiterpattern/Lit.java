@@ -1,4 +1,6 @@
-package com.neulab.fpvm.objectalgreba;
+package com.neulab.fpvm.objectpattern;
+
+import com.neulab.fpvm.objectpattern.Exp;
 
 public class Lit implements Exp {
 
