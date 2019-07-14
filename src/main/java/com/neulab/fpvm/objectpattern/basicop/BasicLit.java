@@ -15,4 +15,12 @@ public class BasicLit implements BasicExp {
     public BasicValue eval() {
         return new BasicVInt(x);
     }
+
+    /**
+     *
+     * need modify existed operator class
+     */
+    public String pprint() {
+        return null;
+    }
 }

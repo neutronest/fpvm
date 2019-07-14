@@ -17,4 +17,12 @@ public class BasicAdd implements BasicExp {
         return new BasicVInt(e1.eval().getInt() + e2.eval().getInt());
     }
 
+    /**
+     *
+     * need modify existed operator class
+     */
+    public String pprint() {
+        return null;
+    }
+
 }
