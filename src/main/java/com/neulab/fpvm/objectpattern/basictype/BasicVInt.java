@@ -1,4 +1,6 @@
-package com.neulab.fpvm.objectpattern;
+package com.neulab.fpvm.objectpattern.basictype;
+
+import com.neulab.fpvm.objectpattern.BasicValue;
 
 public class BasicVInt implements BasicValue {
 
