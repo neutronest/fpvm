@@ -9,4 +9,8 @@ public class VisitorIntFnFactory implements VisitorFn<Integer> {
         return a1 + a2;
     }
 
+    public Integer mul(Integer a1, Integer a2) {
+        return a1 * a2;
+    }
+
 }

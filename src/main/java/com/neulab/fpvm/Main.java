@@ -1,10 +1,7 @@
 package com.neulab.fpvm;
 
 import com.neulab.fpvm.objectalgreba.ExpAlg;
-import com.neulab.fpvm.visiterpattern.VisitorAddExp;
-import com.neulab.fpvm.visiterpattern.VisitorExp;
-import com.neulab.fpvm.visiterpattern.VisitorIntFnFactory;
-import com.neulab.fpvm.visiterpattern.VisitorLitExp;
+import com.neulab.fpvm.visiterpattern.*;
 
 class Op<T> {
     T e1 (ExpAlg<T> f) {
@@ -28,7 +25,9 @@ public class Main {
         VisitorAddExp e1 = new VisitorAddExp(v1, v2);
         System.out.println("VisitorPattern 1+2 result: " + e1.accept(visitorIntFnFactory));
 
-
+        VisitorLitExp v3 = new VisitorLitExp(3);
+        VisitorMulExp e2 = new VisitorMulExp(e1, v3);
+        System.out.println("VisitorPattern (1+2)*3 result: " + e2.accept(visitorIntFnFactory));
 
 
 
