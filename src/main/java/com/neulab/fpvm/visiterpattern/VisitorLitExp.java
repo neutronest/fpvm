@@ -11,4 +11,8 @@ public class VisitorLitExp implements VisitorExp<Integer> {
     public Integer accept(VisitorFn<Integer> visitorFn) {
         return visitorFn.lit(x);
     }
+
+    public String print(VisitorFn<Integer> visitorFn) {
+        return x.toString();
+    }
 }

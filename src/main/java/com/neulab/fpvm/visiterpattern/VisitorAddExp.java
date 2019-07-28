@@ -12,4 +12,8 @@ public class VisitorAddExp implements VisitorExp<Integer> {
     public Integer accept(VisitorFn<Integer> visitorFn) {
         return visitorFn.add(e1.accept(visitorFn), e2.accept(visitorFn));
     }
+
+    public String print(VisitorFn<Integer> visitorFn) {
+        return "(" + e1.print(visitorFn) + " + " + e2.print(visitorFn) + ")";
+    }
 }
